@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+	<style>
+		body{
+			background-color: #f5f5f5;
+		}
+		#div1{
+			width:400px;
+			height: 171px;
+			background:url('./clock.jpg') no-repeat;
+			color: #00b7d3;
+			font-size: 60px;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 171px;
+		}
+	</style>
+</head>
+
+<body>
+<div id="div1">
+</div>
+<script>
+function clock(){
+	var nowDay=new Date();
+	var h=nowDay.getHours();
+	var m=nowDay.getMinutes();
+	var s=nowDay.getSeconds();
+	h<10 ? h="0"+h : h=h;
+	m<10 ? m= "0"+m : m=m;
+	s<10 ? s= "0"+s : s=s;
+    div1.innerHTML=h+":"+m+":"+s;
+}
+setInterval("clock()",1000);
+</script>
+</body>
+</html>

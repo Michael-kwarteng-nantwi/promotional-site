@@ -1,0 +1,24 @@
+body {
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.p {
+    align-content: center;
+}
